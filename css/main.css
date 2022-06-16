@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 :root {
   --main-color-white: #fff;
   --main-text-color-black: #000;
@@ -27,7 +34,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -43,12 +51,17 @@ body {
 
 /* site header start */
 .site-header {
-  box-shadow: 0px 4px 20px #0000001a;
+  -webkit-box-shadow: 0px 4px 20px #0000001a;
+          box-shadow: 0px 4px 20px #0000001a;
 }
 
 .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -64,8 +77,12 @@ body {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 8px 0 0;
   padding: 0;
   list-style: none;
@@ -82,8 +99,11 @@ body {
 
 .nav-item:active {
   border-bottom: 3px solid transparent;
-  color: var(--main-color-white);
   background-color: #191919b3;
+}
+
+.nav-item:active .nav-link {
+  color: var(--main-color-white);
 }
 
 .nav-link {
@@ -134,9 +154,15 @@ body {
 
 /* site section one start */
 .site-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 80px 0;
 }
 
@@ -198,9 +224,14 @@ body {
 }
 
 .services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 24px 0 40px 0;
   padding: 0;
   list-style: none;
@@ -210,17 +241,20 @@ body {
   width: 320px;
   padding: 170px 58px 24px 58px;
   border-radius: 5px;
-  box-shadow: 0px 8px 8px #0000001a;
+  -webkit-box-shadow: 0px 8px 8px #0000001a;
+          box-shadow: 0px 8px 8px #0000001a;
   text-decoration: none;
   position: relative;
 }
 
 .services-card:hover {
-  box-shadow: 0px 12px 21px #0000001a;
+  -webkit-box-shadow: 0px 12px 21px #0000001a;
+          box-shadow: 0px 12px 21px #0000001a;
 }
 
 .services-card:active {
-  box-shadow: 0px 4px 4px #0000001a;
+  -webkit-box-shadow: 0px 4px 4px #0000001a;
+          box-shadow: 0px 4px 4px #0000001a;
 }
 
 .services-card::before {
@@ -286,9 +320,15 @@ body {
 }
 
 .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .link {
@@ -313,17 +353,25 @@ body {
 }
 
 .card-item {
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 830px;
 }
 
 .card-item:nth-child(2) {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .card-item:nth-child(4) {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .img {
@@ -388,8 +436,11 @@ body {
   padding: 56px 0;
 }
 
-.forms .caption .caption-title,
-.caption-text {
+.forms .caption-title {
+  color: var(--main-color-white);
+}
+
+.forms .caption-text {
   color: var(--main-color-white);
 }
 
@@ -429,6 +480,8 @@ body {
 }
 
 .footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 56px;
 }
@@ -474,8 +527,12 @@ body {
 }
 
 .links-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
