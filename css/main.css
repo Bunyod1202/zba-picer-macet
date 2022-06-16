@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 :root {
   --main-color-white: #fff;
   --main-text-color-black: #000;
@@ -115,6 +122,7 @@ body {
 }
 
 .btn-blue {
+  display: inline-block;
   border-radius: 5px;
   padding: 8px 16px;
   font-weight: 700;
