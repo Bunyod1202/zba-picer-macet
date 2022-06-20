@@ -6,13 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixer</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <!-- site header start -->
-  <header class="site-header">
+  <header class="site-header animate__animated animate__rubberBand animate__delay-1s">
     <div class="container">
       <div class="header-inner">
         <a class="logo" href="./index.html">
@@ -52,14 +56,14 @@
     <section class="inst">
       <div class="container">
         <div class="site-banner">
-          <div class="site-banner-text">
+          <div class="site-banner-text animate__animated animate__backInLeft animate__delay-2s">
             <h1 class="banner-title">Biznesingizni keyingi bosqichga
               olib chiqing</h1>
             <p class="banner-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia
               ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
             <a href="#" class="btn-blue">Xizmatlar bilan tanishish</a>
           </div>
-          <div class="side-banner-vidio">
+          <div class="side-banner-vidio animate__animated animate__backInRight animate__delay-2s">
             <iframe class="yotube" src="https://www.youtube.com/embed/6_pru8U2RmM" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -73,12 +77,12 @@
     <section>
       <div class="container">
         <div class="services">
-          <div class="caption">
+          <div class="caption animate__animated  animate__backInDown animate__delay-3s">
             <h2 class="caption-title">Xizmatlar</h2>
             <p class="caption-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis
               lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
           </div>
-          <ul class="services-list">
+          <ul class="services-list animate__animated animate__fadeInUp animate__delay-5s">
             <li class="services-item">
               <a class="services-link" href="./websiteCreation.html">
                 <div class="services-card">
@@ -195,15 +199,15 @@
           <form class="site-form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
             <input class="form-input" name="last-name" aria-label="ismingizn kiriting" type="text"
               placeholder="Ismingiz" required>
-            <input class="form-input" name="phone-number" aria-label="Telefon raqamingiz" type="tel"
+            <input class="form-input" name="phone-number" aria-label="Telefon raqamingiz kiriting" type="tel"
               placeholder="Telefon raqamingiz" required>
             <select class="select form-input" name="order-form" required>
               <option value="" selected disabled>Xizmat turi</option>
-              <option value="Vebsayt tuzish">Vebsayt tuzish</option>
-              <option value="Telegram bot">Telegram bot</option>
-              <option value="SMM">SMM</option>
-              <option value="Grafik dizayn">Grafik dizayn</option>
-              <option value="CRM tizimlar">CRM tizimlar</option>
+              <option value="create_website">Vebsayt tuzish</option>
+              <option value="telegram_bot">Telegram bot</option>
+              <option value="smm">SMM</option>
+              <option value="graphic_design">Grafik dizayn</option>
+              <option value="crm_systems">CRM tizimlar</option>
             </select>
             <div class="btn-group">
               <button type="submit" class="btn-blue btn">Buyurtma berish</button>
