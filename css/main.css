@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 :root {
   --main-color-white: #fff;
   --main-text-color-black: #000;
@@ -28,6 +29,7 @@
 }
 
 * {
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -582,3 +584,28 @@ body a {
 }
 
 /* site footer fin1shed */
+
+:root {
+  --animation-delay: 75ms;
+}
+
+
+
+span {
+  opacity: 0;
+  animation-name: typewriter;
+  animation-fill-mode: forwards;
+  animation-duration: 0s;
+  animation-delay: calc(var(--animation-order) * var(--animation-delay));
+  
+}
+
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

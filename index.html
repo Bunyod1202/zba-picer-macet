@@ -10,13 +10,13 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
   <!-- site header start -->
-  <header class="site-header animate__animated animate__rubberBand animate__delay-1s">
+  <header class="site-header animate__animated animate__rubberBand ">
     <div class="container">
       <div class="header-inner">
         <a class="logo" href="./index.html">
@@ -56,14 +56,14 @@
     <section class="inst">
       <div class="container">
         <div class="site-banner">
-          <div class="site-banner-text animate__animated animate__backInLeft animate__delay-2s">
-            <h1 class="banner-title">Biznesingizni keyingi bosqichga
+          <div class="site-banner-text">
+            <h1 class="banner-title sentence">Biznesingizni keyingi bosqichga
               olib chiqing</h1>
-            <p class="banner-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia
+            <p class="banner-text sentence">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia
               ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
-            <a href="#" class="btn-blue">Xizmatlar bilan tanishish</a>
+            <a href="#services" class="btn-blue">Xizmatlar bilan tanishish</a>
           </div>
-          <div class="side-banner-vidio animate__animated animate__backInRight animate__delay-2s">
+          <div class="side-banner-vidio">
             <iframe class="yotube" src="https://www.youtube.com/embed/6_pru8U2RmM" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -76,7 +76,7 @@
     <!-- site section two start -->
     <section>
       <div class="container">
-        <div class="services">
+        <div class="services" id="services">
           <div class="caption animate__animated  animate__backInDown animate__delay-3s">
             <h2 class="caption-title">Xizmatlar</h2>
             <p class="caption-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis
@@ -125,7 +125,7 @@
             </li>
           </ul>
           <div class="btn-group">
-            <a class="btn-blue" href="#">Buyurtma berish</a>
+            <a class="btn-blue" href="#zakaz">Buyurtma berish</a>
             <a class="link" href="#">Xizmatlar sahifasiga o’tish</a>
           </div>
         </div>
@@ -180,7 +180,7 @@
             </li>
           </ol>
           <div class="btn-group">
-            <a class="btn-blue" href="#">Buyurtma berish</a>
+            <a class="btn-blue" href="#zakaz">Buyurtma berish</a>
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
     <section class="hero">
       <div class="container">
         <div class="forms">
-          <div class="caption">
+          <div class="caption" id="zakaz">
             <h2 class="caption-title">Buyurtma berish</h2>
             <p class="caption-text">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis
               lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
@@ -272,7 +272,7 @@
 
   <!-- site footer fin1shed -->
 
-
+<script src="./js/main.js"></script>
 </body>
 
 </html>
