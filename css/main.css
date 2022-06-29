@@ -121,8 +121,24 @@ body a {
 }
 .nav-item:hover .drop-list {
   display: block;
+  z-index: 1;
+  animation-name: drop;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
-
+@keyframes drop {
+  0% {
+    
+  transform: translateY(-100px);
+  opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   transform: translateY(0);
+  }
+  
+}
 .nav-item:active {
   border-bottom: 3px solid transparent;
   background-color: #191919b3;
@@ -141,6 +157,7 @@ body a {
 }
 .drop-list {
   display: none;
+  opacity: 1;
   background-color: var(--main-color-white);
   list-style: none;
   padding: 0;
